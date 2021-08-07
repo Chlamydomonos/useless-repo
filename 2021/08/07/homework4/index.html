@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"blog.chlamydomonos.xyz","root":"/useless-repo/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://blog.chlamydomonos.xyz/useless-repo/index.html">
+  <meta name="description" content="复习题（一）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第四次作业">
+<meta property="og:url" content="https://blog.chlamydomonos.xyz/useless-repo/2021/08/07/homework4/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="复习题（一）">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-08-07T08:51:50.000Z">
+<meta property="article:modified_time" content="2021-08-07T09:24:19.174Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://blog.chlamydomonos.xyz/useless-repo/">
+<link rel="canonical" href="https://blog.chlamydomonos.xyz/useless-repo/2021/08/07/homework4/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>第四次作业 | Hexo</title>
   
 
 
@@ -139,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +162,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/useless-repo/2021/08/07/homework4/" class="post-title-link" itemprop="url">第四次作业</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          第四次作业
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,228 +188,71 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="复习题一">复习题（一）</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/useless-repo/2021/08/07/homework4/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <h2 id="复习题一">复习题（一）</h2>
+<span id="more"></span>
+<h3 id="变量交换">1.变量交换</h3>
+<p>编写一个程序，实现以下功能：</p>
+<ul>
+<li>定义整数变量<code>a</code>和<code>b</code></li>
+<li>从键盘输入<code>a</code>和<code>b</code>的值</li>
+<li>输出<code>a</code>和<code>b</code>的值，用空格分隔，并换行</li>
+<li>交换<code>a</code>和<code>b</code>的值</li>
+<li>输出<code>a</code>和<code>b</code>的值，用空格分隔</li>
+</ul>
+<p>示例输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br></pre></td></tr></table></figure>
+<p>示例输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">2 1</span><br></pre></td></tr></table></figure>
+<p><strong>注意，必须依据题目要求交换</strong><code>a</code><strong>和</strong><code>b</code><strong>，不能直接用</strong><code>cout &lt;&lt; b &lt;&lt; ' ' &lt;&lt; a</code><strong>输出</strong>。</p>
+<p><span style="color: red;"><b>错误的</b></span>示例代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a, b;</span><br><span class="line">	cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; b &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; b &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="数字求和">2.数字求和</h3>
+<p>编写一个程序，实现以下功能：</p>
+<ul>
+<li>输入一个正整数<span class="math inline">\(n\)</span></li>
+<li>输入<span class="math inline">\(n\)</span>个正整数<span class="math inline">\(a_1, a_2, \dots, a_n\)</span></li>
+<li>输出<span class="math inline">\(a_1, a_2, \dots, a_n\)</span>中所有奇数的和</li>
+</ul>
+<p>示例输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8</span><br><span class="line">1 2 5 8 7 3 4 6</span><br></pre></td></tr></table></figure>
+<p>示例输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16</span><br></pre></td></tr></table></figure>
+<h3 id="数位分解">3. 数位分解</h3>
+<p>编写一个程序，实现以下功能：</p>
+<ul>
+<li><p>输入一个不超过10的正整数<span class="math inline">\(n\)</span></p></li>
+<li><p>输入一个<span class="math inline">\(n\)</span>位的正整数<span class="math inline">\(a\)</span></p></li>
+<li><p>按从后往前的输出<span class="math inline">\(a\)</span>的每位，中间用空格分隔</p></li>
+</ul>
+<p>示例输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">142857</span><br></pre></td></tr></table></figure>
+<p>示例输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7 5 8 2 4 1</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.chlamydomonos.xyz/useless-repo/2021/08/06/homework3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/useless-repo/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/useless-repo/2021/08/06/homework3/" class="post-title-link" itemprop="url">第三次作业</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-08-06 14:08:02 / 修改时间：16:59:13" itemprop="dateCreated datePublished" datetime="2021-08-06T14:08:02+08:00">2021-08-06</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="第一题-分支结构">第一题 分支结构</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/useless-repo/2021/08/06/homework3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.chlamydomonos.xyz/useless-repo/2021/08/05/homework2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/useless-repo/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/useless-repo/2021/08/05/homework2/" class="post-title-link" itemprop="url">第二次作业</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-08-05 16:58:05 / 修改时间：17:09:23" itemprop="dateCreated datePublished" datetime="2021-08-05T16:58:05+08:00">2021-08-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="第一题-整数与小数的运算">第一题 整数与小数的运算</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/useless-repo/2021/08/05/homework2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/useless-repo/2021/08/06/homework3/" rel="prev" title="第三次作业">
+      <i class="fa fa-chevron-left"></i> 第三次作业
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.chlamydomonos.xyz/useless-repo/2021/08/05/homework1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/useless-repo/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/useless-repo/2021/08/05/homework1/" class="post-title-link" itemprop="url">第一次作业</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-08-05 16:57:56 / 修改时间：17:09:27" itemprop="dateCreated datePublished" datetime="2021-08-05T16:57:56+08:00">2021-08-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="第一题hello-world">第一题：Hello World</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/useless-repo/2021/08/05/homework1/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -458,6 +305,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E4%B9%A0%E9%A2%98%E4%B8%80"><span class="nav-number">1.</span> <span class="nav-text">复习题（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E4%BA%A4%E6%8D%A2"><span class="nav-number">1.1.</span> <span class="nav-text">1.变量交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%B1%82%E5%92%8C"><span class="nav-number">1.2.</span> <span class="nav-text">2.数字求和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E4%BD%8D%E5%88%86%E8%A7%A3"><span class="nav-number">1.3.</span> <span class="nav-text">3. 数位分解</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
